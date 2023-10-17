@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mémo règle RGAA</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Mon contenu de page -->
+        <h1>Test de règles RGAA</h1>
+
+        <!--Catégorie image-->
+        <a href="https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/#1" title="Cliquer ici pour retrouver toutes les règles sur les images en RGAA">Règles sur les images ici</a>
+
+        <img src="img/image-chat.jpg" alt="Image d'un chat à poil long allongé">
+
+        <!--Catégorie media-->
+
+        <video controls>
+            <source src="Otter.mp4" type="video/mp4" width="600">
+            <track label="Français" kind="captions" src="captions_fr.vtt" srclang="fr" default>
+            <!-- track : fournit des pistes textuelles comme des sous-titres, des légendes, des descriptions ou des chapitres -->
+            <!-- src : Pointe vers le fichier contenant la piste textuelle, ici un fichier .vtt (WebVTT). Ce fichier contient le texte des sous-titres et des informations sur le moment où chaque sous-titre doit être affiché. -->
+            <!-- kind: Indique le type de piste textuelle -->
+            <!-- srclang: Spécifie la langue de la piste textuelle -->
+        </video>
+
+        <!--Catégorie Formulaire-->
+        <form action="#" method="GET">
+
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" id="username" name="username">
+
+        </form>
+        <script src="js/script.js"></script>
+    </body>
+</html>

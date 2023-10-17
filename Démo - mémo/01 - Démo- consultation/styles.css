@@ -1,0 +1,30 @@
+.card-header{
+    border: solid #000000 2px;
+    text-align: center;
+  }
+
+.card-body{
+ border: solid #1c4a63 2px;
+}
+
+.container{
+  display: flex;
+}
+
+@media (orientation: portrait){
+  .container{
+    flex-direction: column;
+  }
+}
+
+@media (orientation: landscape){
+    .container{
+      flex-direction: row;
+    }
+  .card-header{
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

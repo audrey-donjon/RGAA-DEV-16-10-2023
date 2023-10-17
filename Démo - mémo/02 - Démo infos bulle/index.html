@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <title>Exemple Infobulle Accessible</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+
+        <span class="hoverable" tabindex="0" aria-describedby="infoTip">Mot clé</span>
+        <!-- Le <span> a un tabindex="0" pour permettre la prise de focus via le clavier. 
+L'attribut aria-describedby permet de lier cette balise au div de l'infobulle pour fournir une description plus détaillée.-->
+
+        <!-- Infobulle associée au mot clé -->
+        <div id="infoTip" class="tooltip" tabindex="-1">
+            Ceci est une explication du mot clé.
+            <!-- Lien dans l'infobulle -->
+            <a href="#moreInfo" tabindex="-1">Plus d'infos</a>
+        </div>
+        <!-- Le tabindex="-1" sur la div et le lien assure que ces éléments peuvent recevoir le focus programmé via JavaScript mais ne sont pas dans le flux de navigation standard du clavier. -->
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
